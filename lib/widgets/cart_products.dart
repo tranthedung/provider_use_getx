@@ -57,9 +57,17 @@ class CartProductsCard extends StatelessWidget {
           ),
           Expanded(child: Container()),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              controller.removeProduct(product);
+            },
             icon: Icon(Icons.remove),
           ),
+          Text('$quantity'),
+          IconButton(
+              onPressed: () {
+                controller.addProduct(product);
+              },
+              icon: Icon(Icons.add_circle)),
         ],
       ),
     );

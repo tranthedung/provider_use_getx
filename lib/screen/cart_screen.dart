@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_use_bloc1/widgets/cart_products.dart';
+import 'package:provider_use_bloc1/widgets/cart_total.dart';
 import 'package:provider_use_bloc1/widgets/catalog_products.dart';
 
 class CartScreen extends StatelessWidget {
@@ -22,6 +23,7 @@ class CartScreen extends StatelessWidget {
         child: Column(
           children: [
             CartProducts(),
+            CartTotal(),
           ],
         ),
       ),
