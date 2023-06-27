@@ -43,6 +43,12 @@ class CartTotal extends StatelessWidget {
                 child: Text(
                   'Buy',
                 ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 222, 201, 7),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  )
+                ),
               ),
             ],
           ),
